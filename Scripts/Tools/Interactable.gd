@@ -7,7 +7,8 @@ func get_interaction_text():
 
 
 func interact():
-	print("interacted with %s" % name)
+	pass
+#	print("interacted with %s" % name)
 
 
 func back_to_normal():

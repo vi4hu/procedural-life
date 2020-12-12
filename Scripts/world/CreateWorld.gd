@@ -138,7 +138,7 @@ func plant_trees():
 					if  n > tree_p.x and n < tree_p.y:
 						var chance = randi() % 100
 						if chance < tree_chances:
-							if tree_from == 0 and tree_till == 0:
+							if tree_from > trees.size() or tree_till == 0:
 								break
 							var tree_load = load(trees_dir + "/"+ trees[randi()%tree_till + tree_from])
 							var tree_ins = (tree_load).instance()
@@ -157,7 +157,7 @@ func plant_grasses():
 					if  n > grass_p.x and n < grass_p.y:
 						var chance = randi()%100
 						if chance < grass_chances:
-							if grass_from == 0 and grass_till == 0:
+							if grass_from > grass.size() or grass_till == 0:
 								break
 							var grass_load = load(grass_dir + "/"+ grass[randi()%grass_till + grass_from])
 							var grass_ins = (grass_load).instance()
@@ -176,7 +176,7 @@ func plant_bushes():
 					if  n > bush_p.x and n < bush_p.y:
 						var chance = randi()%100
 						if chance < bush_chances:
-							if bush_from == 0 and bush_till == 0:
+							if bush_from > grass.size() or bush_till == 0:
 								break
 							var bush_load = load(grass_dir + "/"+ grass[randi()%bush_till + bush_from])
 							var bush_ins = (bush_load).instance()
@@ -195,7 +195,7 @@ func plant_rocks():
 					if  n > rock_p.x and n < rock_p.y:
 						var chance = randi()%100
 						if chance < rock_chances:
-							if rock_from == 0 and rock_till == 0:
+							if rock_from > rocks.size() or rock_till == 0:
 								break
 							var rocks_load = load(rocks_dir + "/"+ rocks[randi()%rock_till + rock_from])
 							var rocks_ins = (rocks_load).instance()

@@ -21,9 +21,10 @@ __meta__ = {
 
 [node name="TabContainer" type="TabContainer" parent="VBoxContainer"]
 margin_right = 500.0
-margin_bottom = 48.0
+margin_bottom = 150.0
 grow_horizontal = 2
 grow_vertical = 2
+tab_align = 0
 
 [node name="World" type="Tabs" parent="VBoxContainer/TabContainer"]
 visible = false
@@ -40,62 +41,62 @@ __meta__ = {
 }
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/TabContainer/World/VBoxContainer"]
-margin_right = 382.0
-margin_bottom = 21.0
+margin_right = 402.0
+margin_bottom = 22.0
 
 [node name="Label" type="Label" parent="VBoxContainer/TabContainer/World/VBoxContainer/HBoxContainer"]
-margin_right = 111.0
-margin_bottom = 21.0
+margin_right = 121.0
+margin_bottom = 22.0
 text = "Map Size: (x/y)"
 
 [node name="mapsizex" type="LineEdit" parent="VBoxContainer/TabContainer/World/VBoxContainer/HBoxContainer"]
-margin_left = 121.0
-margin_right = 205.0
-margin_bottom = 21.0
+margin_left = 131.0
+margin_right = 215.0
+margin_bottom = 22.0
 max_length = 10
 
 [node name="mapsizey" type="LineEdit" parent="VBoxContainer/TabContainer/World/VBoxContainer/HBoxContainer"]
-margin_left = 215.0
-margin_right = 299.0
-margin_bottom = 21.0
+margin_left = 225.0
+margin_right = 309.0
+margin_bottom = 22.0
 max_length = 10
 
 [node name="ButtonWorld" type="Button" parent="VBoxContainer/TabContainer/World/VBoxContainer/HBoxContainer"]
-margin_left = 309.0
-margin_right = 382.0
-margin_bottom = 21.0
+margin_left = 319.0
+margin_right = 402.0
+margin_bottom = 22.0
 text = "Generate"
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/TabContainer/World/VBoxContainer"]
-margin_top = 31.0
-margin_right = 382.0
-margin_bottom = 52.0
+margin_top = 32.0
+margin_right = 402.0
+margin_bottom = 54.0
 
 [node name="Label" type="Label" parent="VBoxContainer/TabContainer/World/VBoxContainer/HBoxContainer2"]
-margin_right = 123.0
-margin_bottom = 21.0
+margin_right = 133.0
+margin_bottom = 22.0
 text = "Max Water Point:"
 
 [node name="waterpoint" type="LineEdit" parent="VBoxContainer/TabContainer/World/VBoxContainer/HBoxContainer2"]
-margin_left = 133.0
-margin_right = 217.0
-margin_bottom = 21.0
+margin_left = 143.0
+margin_right = 227.0
+margin_bottom = 22.0
 max_length = 10
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer/TabContainer/World/VBoxContainer"]
-margin_top = 62.0
-margin_right = 382.0
-margin_bottom = 83.0
+margin_top = 64.0
+margin_right = 402.0
+margin_bottom = 86.0
 
 [node name="Label" type="Label" parent="VBoxContainer/TabContainer/World/VBoxContainer/HBoxContainer3"]
-margin_right = 116.0
-margin_bottom = 21.0
+margin_right = 126.0
+margin_bottom = 22.0
 text = "Max Land Point:"
 
 [node name="landpoint" type="LineEdit" parent="VBoxContainer/TabContainer/World/VBoxContainer/HBoxContainer3"]
-margin_left = 126.0
-margin_right = 210.0
-margin_bottom = 21.0
+margin_left = 136.0
+margin_right = 220.0
+margin_bottom = 22.0
 max_length = 10
 
 [node name="Tree\'s" type="Tabs" parent="VBoxContainer/TabContainer"]
@@ -111,74 +112,74 @@ __meta__ = {
 }
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer/TabContainer/Tree\'s/VBoxContainer2"]
-margin_right = 301.0
-margin_bottom = 21.0
+margin_right = 331.0
+margin_bottom = 22.0
 
 [node name="Label" type="Label" parent="VBoxContainer/TabContainer/Tree\'s/VBoxContainer2/HBoxContainer"]
-margin_right = 113.0
-margin_bottom = 21.0
+margin_right = 123.0
+margin_bottom = 22.0
 text = "Max Tree Point:"
 
 [node name="treepoint" type="LineEdit" parent="VBoxContainer/TabContainer/Tree\'s/VBoxContainer2/HBoxContainer"]
-margin_left = 123.0
-margin_right = 207.0
-margin_bottom = 21.0
+margin_left = 133.0
+margin_right = 217.0
+margin_bottom = 22.0
 max_length = 10
 
 [node name="ButtonTrees" type="Button" parent="VBoxContainer/TabContainer/Tree\'s/VBoxContainer2/HBoxContainer"]
-margin_left = 217.0
-margin_right = 280.0
-margin_bottom = 21.0
+margin_left = 227.0
+margin_right = 300.0
+margin_bottom = 22.0
 text = "Genrate"
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/TabContainer/Tree\'s/VBoxContainer2"]
-margin_top = 31.0
-margin_right = 301.0
-margin_bottom = 52.0
+margin_top = 32.0
+margin_right = 331.0
+margin_bottom = 54.0
 
 [node name="Label" type="Label" parent="VBoxContainer/TabContainer/Tree\'s/VBoxContainer2/HBoxContainer2"]
-margin_right = 37.0
-margin_bottom = 21.0
+margin_right = 47.0
+margin_bottom = 22.0
 text = "from:"
 
 [node name="treefrom" type="LineEdit" parent="VBoxContainer/TabContainer/Tree\'s/VBoxContainer2/HBoxContainer2"]
-margin_left = 47.0
-margin_right = 131.0
-margin_bottom = 21.0
+margin_left = 57.0
+margin_right = 141.0
+margin_bottom = 22.0
 max_length = 10
 
 [node name="Label2" type="Label" parent="VBoxContainer/TabContainer/Tree\'s/VBoxContainer2/HBoxContainer2"]
-margin_left = 141.0
-margin_right = 169.0
-margin_bottom = 21.0
+margin_left = 151.0
+margin_right = 189.0
+margin_bottom = 22.0
 text = "Till:"
 
 [node name="Label3" type="Label" parent="VBoxContainer/TabContainer/Tree\'s/VBoxContainer2/HBoxContainer2"]
-margin_left = 179.0
-margin_right = 207.0
-margin_bottom = 21.0
+margin_left = 199.0
+margin_right = 237.0
+margin_bottom = 22.0
 text = "Till:"
 
 [node name="treetill" type="LineEdit" parent="VBoxContainer/TabContainer/Tree\'s/VBoxContainer2/HBoxContainer2"]
-margin_left = 217.0
-margin_right = 301.0
-margin_bottom = 21.0
+margin_left = 247.0
+margin_right = 331.0
+margin_bottom = 22.0
 max_length = 10
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer/TabContainer/Tree\'s/VBoxContainer2"]
-margin_top = 62.0
-margin_right = 301.0
-margin_bottom = 83.0
+margin_top = 64.0
+margin_right = 331.0
+margin_bottom = 86.0
 
 [node name="Label4" type="Label" parent="VBoxContainer/TabContainer/Tree\'s/VBoxContainer2/HBoxContainer3"]
-margin_right = 112.0
-margin_bottom = 21.0
+margin_right = 122.0
+margin_bottom = 22.0
 text = "Chance(0-100):"
 
 [node name="treechance" type="LineEdit" parent="VBoxContainer/TabContainer/Tree\'s/VBoxContainer2/HBoxContainer3"]
-margin_left = 122.0
-margin_right = 206.0
-margin_bottom = 21.0
+margin_left = 132.0
+margin_right = 216.0
+margin_bottom = 22.0
 max_length = 10
 
 [node name="Grass" type="Tabs" parent="VBoxContainer/TabContainer"]
@@ -192,72 +193,71 @@ margin_right = 40.0
 margin_bottom = 40.0
 
 [node name="HBoxContainer3" type="HBoxContainer" parent="VBoxContainer/TabContainer/Grass/VBoxContainer"]
-margin_right = 298.0
-margin_bottom = 21.0
+margin_right = 318.0
+margin_bottom = 22.0
 
 [node name="Label" type="Label" parent="VBoxContainer/TabContainer/Grass/VBoxContainer/HBoxContainer3"]
-margin_right = 121.0
-margin_bottom = 21.0
+margin_right = 131.0
+margin_bottom = 22.0
 text = "Max Grass Point:"
 
 [node name="grasspoint" type="LineEdit" parent="VBoxContainer/TabContainer/Grass/VBoxContainer/HBoxContainer3"]
-margin_left = 131.0
-margin_right = 215.0
-margin_bottom = 21.0
+margin_left = 141.0
+margin_right = 225.0
+margin_bottom = 22.0
 max_length = 10
 
 [node name="ButtonGrass" type="Button" parent="VBoxContainer/TabContainer/Grass/VBoxContainer/HBoxContainer3"]
-margin_left = 225.0
-margin_right = 298.0
-margin_bottom = 21.0
+margin_left = 235.0
+margin_right = 318.0
+margin_bottom = 22.0
 text = "Generate"
 
 [node name="HBoxContainer4" type="HBoxContainer" parent="VBoxContainer/TabContainer/Grass/VBoxContainer"]
-margin_top = 31.0
-margin_right = 298.0
-margin_bottom = 52.0
+margin_top = 32.0
+margin_right = 318.0
+margin_bottom = 54.0
 
 [node name="Label" type="Label" parent="VBoxContainer/TabContainer/Grass/VBoxContainer/HBoxContainer4"]
-margin_right = 37.0
-margin_bottom = 21.0
+margin_right = 47.0
+margin_bottom = 22.0
 text = "from:"
 
 [node name="grassfrom" type="LineEdit" parent="VBoxContainer/TabContainer/Grass/VBoxContainer/HBoxContainer4"]
-margin_left = 47.0
-margin_right = 131.0
-margin_bottom = 21.0
+margin_left = 57.0
+margin_right = 141.0
+margin_bottom = 22.0
 max_length = 10
 
 [node name="Label2" type="Label" parent="VBoxContainer/TabContainer/Grass/VBoxContainer/HBoxContainer4"]
-margin_left = 141.0
-margin_right = 169.0
-margin_bottom = 21.0
+margin_left = 151.0
+margin_right = 189.0
+margin_bottom = 22.0
 text = "Till:"
 
 [node name="grasstill" type="LineEdit" parent="VBoxContainer/TabContainer/Grass/VBoxContainer/HBoxContainer4"]
-margin_left = 179.0
-margin_right = 263.0
-margin_bottom = 21.0
+margin_left = 199.0
+margin_right = 283.0
+margin_bottom = 22.0
 max_length = 10
 
 [node name="HBoxContainer5" type="HBoxContainer" parent="VBoxContainer/TabContainer/Grass/VBoxContainer"]
-margin_top = 62.0
-margin_right = 298.0
-margin_bottom = 83.0
+margin_top = 64.0
+margin_right = 318.0
+margin_bottom = 86.0
 
 [node name="Label4" type="Label" parent="VBoxContainer/TabContainer/Grass/VBoxContainer/HBoxContainer5"]
-margin_right = 112.0
-margin_bottom = 21.0
+margin_right = 122.0
+margin_bottom = 22.0
 text = "Chance(0-100):"
 
 [node name="grasschance" type="LineEdit" parent="VBoxContainer/TabContainer/Grass/VBoxContainer/HBoxContainer5"]
-margin_left = 122.0
-margin_right = 206.0
-margin_bottom = 21.0
+margin_left = 132.0
+margin_right = 216.0
+margin_bottom = 22.0
 max_length = 10
 
 [node name="Bushes" type="Tabs" parent="VBoxContainer/TabContainer"]
-visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 24.0
@@ -269,74 +269,75 @@ __meta__ = {
 }
 
 [node name="HBoxContainer5" type="HBoxContainer" parent="VBoxContainer/TabContainer/Bushes/VBoxContainer4"]
-margin_right = 292.0
-margin_bottom = 21.0
+margin_right = 312.0
+margin_bottom = 23.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Label" type="Label" parent="VBoxContainer/TabContainer/Bushes/VBoxContainer4/HBoxContainer5"]
-margin_right = 115.0
-margin_bottom = 21.0
+margin_right = 125.0
+margin_bottom = 22.0
 text = "Max Bush Point:"
 
 [node name="bushpoint" type="LineEdit" parent="VBoxContainer/TabContainer/Bushes/VBoxContainer4/HBoxContainer5"]
-margin_left = 125.0
-margin_right = 209.0
-margin_bottom = 21.0
+margin_left = 135.0
+margin_right = 219.0
+margin_bottom = 23.0
 max_length = 10
 
 [node name="ButtonBushes" type="Button" parent="VBoxContainer/TabContainer/Bushes/VBoxContainer4/HBoxContainer5"]
-margin_left = 219.0
-margin_right = 292.0
-margin_bottom = 21.0
+margin_left = 229.0
+margin_right = 312.0
+margin_bottom = 23.0
 text = "Generate"
 
 [node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/TabContainer/Bushes/VBoxContainer4"]
-margin_top = 31.0
-margin_right = 292.0
-margin_bottom = 52.0
+margin_top = 33.0
+margin_right = 312.0
+margin_bottom = 55.0
 
 [node name="Label" type="Label" parent="VBoxContainer/TabContainer/Bushes/VBoxContainer4/HBoxContainer2"]
-margin_right = 37.0
-margin_bottom = 21.0
+margin_right = 47.0
+margin_bottom = 22.0
 text = "from:"
 
 [node name="bushfrom" type="LineEdit" parent="VBoxContainer/TabContainer/Bushes/VBoxContainer4/HBoxContainer2"]
-margin_left = 47.0
-margin_right = 131.0
-margin_bottom = 21.0
+margin_left = 57.0
+margin_right = 141.0
+margin_bottom = 22.0
 max_length = 10
 
 [node name="Label2" type="Label" parent="VBoxContainer/TabContainer/Bushes/VBoxContainer4/HBoxContainer2"]
-margin_left = 141.0
-margin_right = 169.0
-margin_bottom = 21.0
+margin_left = 151.0
+margin_right = 189.0
+margin_bottom = 22.0
 text = "Till:"
 
 [node name="bushtill" type="LineEdit" parent="VBoxContainer/TabContainer/Bushes/VBoxContainer4/HBoxContainer2"]
-margin_left = 179.0
-margin_right = 263.0
-margin_bottom = 21.0
+margin_left = 199.0
+margin_right = 283.0
+margin_bottom = 22.0
 max_length = 10
 
 [node name="HBoxContainer6" type="HBoxContainer" parent="VBoxContainer/TabContainer/Bushes/VBoxContainer4"]
-margin_top = 62.0
-margin_right = 292.0
-margin_bottom = 83.0
+margin_top = 65.0
+margin_right = 312.0
+margin_bottom = 87.0
 
 [node name="Label4" type="Label" parent="VBoxContainer/TabContainer/Bushes/VBoxContainer4/HBoxContainer6"]
-margin_right = 112.0
-margin_bottom = 21.0
+margin_right = 122.0
+margin_bottom = 22.0
 text = "Chance(0-100):"
 
 [node name="bushchance" type="LineEdit" parent="VBoxContainer/TabContainer/Bushes/VBoxContainer4/HBoxContainer6"]
-margin_left = 122.0
-margin_right = 206.0
-margin_bottom = 21.0
+margin_left = 132.0
+margin_right = 216.0
+margin_bottom = 22.0
 max_length = 10
 
 [node name="Rocks" type="Tabs" parent="VBoxContainer/TabContainer"]
+visible = false
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = 24.0
@@ -415,6 +416,89 @@ margin_right = 216.0
 margin_bottom = 22.0
 max_length = 10
 
+[node name="Animals" type="Tabs" parent="VBoxContainer/TabContainer"]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 24.0
+
+[node name="VBoxContainer6" type="VBoxContainer" parent="VBoxContainer/TabContainer/Animals"]
+margin_right = 248.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="VBoxContainer/TabContainer/Animals/VBoxContainer6"]
+margin_right = 248.0
+margin_bottom = 22.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="VBoxContainer/TabContainer/Animals/VBoxContainer6/HBoxContainer6"]
+visible = false
+margin_right = 126.0
+margin_bottom = 22.0
+text = "Max Rock Point:"
+
+[node name="rockpoint" type="LineEdit" parent="VBoxContainer/TabContainer/Animals/VBoxContainer6/HBoxContainer6"]
+visible = false
+margin_right = 84.0
+margin_bottom = 22.0
+max_length = 10
+
+[node name="ButtonAnimals" type="Button" parent="VBoxContainer/TabContainer/Animals/VBoxContainer6/HBoxContainer6"]
+margin_right = 83.0
+margin_bottom = 22.0
+disabled = true
+text = "Generate"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="VBoxContainer/TabContainer/Animals/VBoxContainer6"]
+visible = false
+margin_top = 32.0
+margin_right = 313.0
+margin_bottom = 54.0
+
+[node name="Label" type="Label" parent="VBoxContainer/TabContainer/Animals/VBoxContainer6/HBoxContainer2"]
+margin_right = 47.0
+margin_bottom = 22.0
+text = "from:"
+
+[node name="rockfrom" type="LineEdit" parent="VBoxContainer/TabContainer/Animals/VBoxContainer6/HBoxContainer2"]
+margin_left = 57.0
+margin_right = 141.0
+margin_bottom = 22.0
+max_length = 10
+
+[node name="Label2" type="Label" parent="VBoxContainer/TabContainer/Animals/VBoxContainer6/HBoxContainer2"]
+margin_left = 151.0
+margin_right = 189.0
+margin_bottom = 22.0
+text = "Till:"
+
+[node name="rocktill" type="LineEdit" parent="VBoxContainer/TabContainer/Animals/VBoxContainer6/HBoxContainer2"]
+margin_left = 199.0
+margin_right = 283.0
+margin_bottom = 22.0
+max_length = 10
+
+[node name="HBoxContainer7" type="HBoxContainer" parent="VBoxContainer/TabContainer/Animals/VBoxContainer6"]
+visible = false
+margin_top = 32.0
+margin_right = 313.0
+margin_bottom = 54.0
+
+[node name="Label4" type="Label" parent="VBoxContainer/TabContainer/Animals/VBoxContainer6/HBoxContainer7"]
+margin_right = 122.0
+margin_bottom = 22.0
+text = "Chance(0-100):"
+
+[node name="rockchance" type="LineEdit" parent="VBoxContainer/TabContainer/Animals/VBoxContainer6/HBoxContainer7"]
+margin_left = 132.0
+margin_right = 216.0
+margin_bottom = 22.0
+max_length = 10
+
 [node name="VBoxContainer2" type="VBoxContainer" parent="."]
 anchor_left = 1.0
 anchor_right = 1.0
@@ -426,43 +510,43 @@ __meta__ = {
 
 [node name="Player" type="Button" parent="VBoxContainer2"]
 margin_right = 156.0
-margin_bottom = 22.0
+margin_bottom = 23.0
 text = "Spawn Player"
 
 [node name="WorldCamera" type="Button" parent="VBoxContainer2"]
-margin_top = 32.0
+margin_top = 33.0
 margin_right = 156.0
-margin_bottom = 54.0
+margin_bottom = 56.0
 text = "World Camera"
 
 [node name="GenerateWorld" type="Button" parent="VBoxContainer2"]
-margin_top = 64.0
+margin_top = 66.0
 margin_right = 156.0
-margin_bottom = 86.0
+margin_bottom = 89.0
 text = "Greate new World"
 
 [node name="Ntree" type="Label" parent="VBoxContainer2"]
-margin_top = 96.0
+margin_top = 99.0
 margin_right = 156.0
-margin_bottom = 118.0
+margin_bottom = 121.0
 text = "No of Tree's"
 
 [node name="Ngrass" type="Label" parent="VBoxContainer2"]
-margin_top = 128.0
+margin_top = 131.0
 margin_right = 156.0
-margin_bottom = 150.0
+margin_bottom = 153.0
 text = "No of Grass's:"
 
 [node name="Nbush" type="Label" parent="VBoxContainer2"]
-margin_top = 160.0
+margin_top = 163.0
 margin_right = 156.0
-margin_bottom = 182.0
+margin_bottom = 185.0
 text = "No of Bushes:"
 
 [node name="Nrock" type="Label" parent="VBoxContainer2"]
-margin_top = 192.0
+margin_top = 195.0
 margin_right = 156.0
-margin_bottom = 214.0
+margin_bottom = 217.0
 text = "No of Rocks:"
 
 [node name="InteractionLabel" type="Label" parent="."]
@@ -470,7 +554,7 @@ anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 margin_top = -21.0
-text = "WELLCOME TO THE PROJECT"
+text = "WELLCOME"
 align = 1
 valign = 1
 __meta__ = {
@@ -517,6 +601,7 @@ __meta__ = {
 [connection signal="pressed" from="VBoxContainer/TabContainer/Grass/VBoxContainer/HBoxContainer3/ButtonGrass" to="." method="_on_ButtonGrass_pressed"]
 [connection signal="pressed" from="VBoxContainer/TabContainer/Bushes/VBoxContainer4/HBoxContainer5/ButtonBushes" to="." method="_on_ButtonBushes_pressed"]
 [connection signal="pressed" from="VBoxContainer/TabContainer/Rocks/VBoxContainer6/HBoxContainer6/ButtonRocks" to="." method="_on_ButtonRocks_pressed"]
+[connection signal="pressed" from="VBoxContainer/TabContainer/Animals/VBoxContainer6/HBoxContainer6/ButtonAnimals" to="." method="_on_ButtonAnimals_pressed"]
 [connection signal="pressed" from="VBoxContainer2/Player" to="." method="_on_Player_pressed"]
 [connection signal="pressed" from="VBoxContainer2/WorldCamera" to="." method="_on_WorldCamera_pressed"]
 [connection signal="pressed" from="VBoxContainer2/GenerateWorld" to="." method="_on_GenerateWorld_pressed"]

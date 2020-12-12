@@ -64,7 +64,7 @@ _global_script_class_icons={
 
 config/name="procjam2020"
 run/main_scene="res://Scenes/Main.tscn"
-config/icon="res://icon.png"
+config/icon="res://iicon.png"
 
 [editor_plugins]
 
@@ -134,4 +134,5 @@ interact={
 
 [rendering]
 
+quality/filters/use_nearest_mipmap_filter=true
 environment/default_environment="res://default_env.tres"
