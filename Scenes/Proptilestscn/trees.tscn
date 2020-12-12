@@ -1,0 +1,78 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://Scenes/Props/Trees/8Tree8.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Props/Trees/13Tree13.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Props/Trees/14Tree14.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Props/Trees/10Tree10.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Props/Trees/7Tree7.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/Props/Trees/15Trww15.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Props/Trees/2tree2.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/Props/Trees/4Tree4.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/Props/Trees/9Tree9.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scenes/Props/Trees/6Tree6.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/Props/Trees/11tree11.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Scenes/Props/Trees/5Tree5.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Scenes/Props/Trees/1Tree1.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Scenes/Props/Trees/12Tree12.tscn" type="PackedScene" id=14]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[node name="trees" type="Spatial"]
+
+[node name="treeThin01" parent="." instance=ExtResource( 6 )]
+
+[node name="treeTall03" parent="." instance=ExtResource( 12 )]
+
+[node name="treeTall01" parent="." instance=ExtResource( 8 )]
+
+[node name="treeRoundTop11Snow" parent="." instance=ExtResource( 3 )]
+
+[node name="treeRoundTop10Snow" parent="." instance=ExtResource( 2 )]
+
+[node name="treeRoundTop09Snow" parent="." instance=ExtResource( 4 )]
+
+[node name="treeRoundTop08Snow" parent="." instance=ExtResource( 9 )]
+
+[node name="treeRoundTop07Snow" parent="." instance=ExtResource( 1 )]
+
+[node name="treeRoundTop05" parent="." instance=ExtResource( 14 )]
+
+[node name="treeBlob03" parent="." instance=ExtResource( 5 )]
+
+[node name="treeBlob02" parent="." instance=ExtResource( 10 )]
+
+[node name="tree07" parent="." instance=ExtResource( 11 )]
+
+[node name="tree02" parent="." instance=ExtResource( 7 )]
+
+[node name="Tree1" parent="." instance=ExtResource( 13 )]

@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/zapsplat_nature_forest_ambience_unidentified_bird_call_short_winter_qld_austraia_55315.ogg-ca9fc8fa3e1daa91c4f88c468adcbc4b.oggstr"
+
+[deps]
+
+source_file="res://models/zapsplat_nature_forest_ambience_unidentified_bird_call_short_winter_qld_austraia_55315.ogg"
+dest_files=[ "res://.import/zapsplat_nature_forest_ambience_unidentified_bird_call_short_winter_qld_austraia_55315.ogg-ca9fc8fa3e1daa91c4f88c468adcbc4b.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

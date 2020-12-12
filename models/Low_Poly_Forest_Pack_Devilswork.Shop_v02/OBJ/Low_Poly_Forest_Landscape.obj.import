@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Low_Poly_Forest_Landscape.obj-a57751493b0b057c2d209052c74dbad9.mesh"
+
+[deps]
+
+files=[ "res://.import/Low_Poly_Forest_Landscape.obj-a57751493b0b057c2d209052c74dbad9.mesh" ]
+
+source_file="res://models/Low_Poly_Forest_Pack_Devilswork.Shop_v02/OBJ/Low_Poly_Forest_Landscape.obj"
+dest_files=[ "res://.import/Low_Poly_Forest_Landscape.obj-a57751493b0b057c2d209052c74dbad9.mesh", "res://.import/Low_Poly_Forest_Landscape.obj-a57751493b0b057c2d209052c74dbad9.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

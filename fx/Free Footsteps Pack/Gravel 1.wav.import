@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Gravel 1.wav-b82a04d392260a5062076eef5d6ef7e1.sample"
+
+[deps]
+
+source_file="res://fx/Free Footsteps Pack/Gravel 1.wav"
+dest_files=[ "res://.import/Gravel 1.wav-b82a04d392260a5062076eef5d6ef7e1.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

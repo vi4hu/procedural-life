@@ -1,0 +1,19 @@
+[remap]
+
+importer="wavefront_obj"
+type="Mesh"
+path="res://.import/Low_Poly_Forest_treeTall01.obj-70d82412bf99bc0e8c3d067f24c1f4a5.mesh"
+
+[deps]
+
+files=[ "res://.import/Low_Poly_Forest_treeTall01.obj-70d82412bf99bc0e8c3d067f24c1f4a5.mesh" ]
+
+source_file="res://models/Low_Poly_Forest_Pack_Devilswork.Shop_v02/OBJ/Low_Poly_Forest_treeTall01.obj"
+dest_files=[ "res://.import/Low_Poly_Forest_treeTall01.obj-70d82412bf99bc0e8c3d067f24c1f4a5.mesh", "res://.import/Low_Poly_Forest_treeTall01.obj-70d82412bf99bc0e8c3d067f24c1f4a5.mesh" ]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3( 1, 1, 1 )
+offset_mesh=Vector3( 0, 0, 0 )
+optimize_mesh=true

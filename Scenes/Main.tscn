@@ -1,0 +1,90 @@
+[gd_scene load_steps=10 format=2]
+
+[ext_resource path="res://Scenes/Player/Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://materials/landwatersand.meshlib" type="MeshLibrary" id=2]
+[ext_resource path="res://materials/fence.meshlib" type="MeshLibrary" id=3]
+[ext_resource path="res://Scenes/Uti's/CreateWorld.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scripts/Tools/rotate.gd" type="Script" id=5]
+[ext_resource path="res://Scenes/UI's/UI.tscn" type="PackedScene" id=6]
+[ext_resource path="res://fx/zapsplat_nature_forest_birds_wind_trees_leaves_fall_prop_plane_fly_overhead_001_56738.ogg" type="AudioStream" id=7]
+
+[sub_resource type="ProceduralSky" id=1]
+
+[sub_resource type="Environment" id=2]
+background_mode = 2
+background_sky = SubResource( 1 )
+auto_exposure_enabled = true
+dof_blur_far_quality = 0
+
+[node name="Main" type="Spatial"]
+
+[node name="Groundtiles" type="GridMap" parent="."]
+mesh_library = ExtResource( 2 )
+collision_layer = 2
+collision_mask = 13
+data = {
+"cells": PoolIntArray( 0, 0, 0, 1, 0, 0, 2, 0, 0, 65534, 0, 3, 65535, 0, 0, 0, 1, 2, 1, 1, 2, 2, 1, 2, 65534, 1, 3, 65535, 1, 1610612738, 0, 2, 3, 1, 2, 3, 2, 2, 3, 65534, 2, 3, 65535, 2, 3, 0, 65532, 3, 1, 65532, 3, 2, 65532, 3, 65534, 65532, 3, 65535, 65532, 3, 0, 65533, 2, 1, 65533, 2, 2, 65533, 2, 65534, 65533, 3, 65535, 65533, 1610612738, 0, 65534, 536870912, 1, 65534, 0, 2, 65534, 0, 65534, 65534, 3, 65535, 65534, 536870912, 0, 65535, 0, 1, 65535, 0, 2, 65535, 0, 65534, 65535, 3, 65535, 65535, 0 )
+}
+__meta__ = {
+"_editor_clip_": 0
+}
+
+[node name="BorderTiles" type="GridMap" parent="." groups=[
+"wall",
+]]
+mesh_library = ExtResource( 3 )
+cell_size = Vector3( 2, 2.6, 2 )
+collision_layer = 17
+collision_mask = 17
+data = {
+"cells": PoolIntArray(  )
+}
+__meta__ = {
+"_editor_clip_": 0
+}
+
+[node name="CreateWorld" parent="." instance=ExtResource( 4 )]
+groundtiles = NodePath("../Groundtiles")
+bordertiles = NodePath("../BorderTiles")
+map_size = Vector3( 30, 1, 30 )
+buildingblocks_dir = "res://Scenes/Props/building_blocks"
+anims_dir = "res://Scenes/curranimals"
+trees_dir = "res://Scenes/Props/Trees"
+grass_dir = "res://Scenes/Props/Grass"
+rocks_dir = "res://Scenes/Props/Rocks"
+
+[node name="UI" parent="CreateWorld" instance=ExtResource( 6 )]
+player = ExtResource( 1 )
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 1, 0, 0, 0, -0.811992, 0.583669, 0, -0.583669, -0.811992, 0, 24.4604, 0 )
+shadow_enabled = true
+
+[node name="LandandWater" type="Node" parent="."]
+
+[node name="Trees" type="Node" parent="."]
+
+[node name="Grass" type="Node" parent="."]
+
+[node name="Bushes" type="Node" parent="."]
+
+[node name="Rocks" type="Node" parent="."]
+
+[node name="Spatial" type="Spatial" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 0, 20 )
+script = ExtResource( 5 )
+
+[node name="Camera" type="Camera" parent="Spatial"]
+transform = Transform( -1.62921e-07, 0.642788, -0.766044, 0, 0.766044, 0.642788, 1, 1.04723e-07, -1.24804e-07, -27.3193, 20, 0 )
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource( 2 )
+
+[node name="PlayerPosition" type="Position3D" parent="."]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7.56944, 4.81335, 6.90632 )
+
+[node name="Dianasours" type="Node" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 7 )
+autoplay = true

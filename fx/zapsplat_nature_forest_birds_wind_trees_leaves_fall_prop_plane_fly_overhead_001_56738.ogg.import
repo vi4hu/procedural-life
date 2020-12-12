@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/zapsplat_nature_forest_birds_wind_trees_leaves_fall_prop_plane_fly_overhead_001_56738.ogg-227eda2443dc812b3d7cc03f7c18d657.oggstr"
+
+[deps]
+
+source_file="res://fx/zapsplat_nature_forest_birds_wind_trees_leaves_fall_prop_plane_fly_overhead_001_56738.ogg"
+dest_files=[ "res://.import/zapsplat_nature_forest_birds_wind_trees_leaves_fall_prop_plane_fly_overhead_001_56738.ogg-227eda2443dc812b3d7cc03f7c18d657.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

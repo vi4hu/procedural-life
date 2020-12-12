@@ -1,0 +1,103 @@
+[gd_scene load_steps=26 format=2]
+
+[ext_resource path="res://Scenes/Props/tree01.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Props/treeRoundTop03.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/Props/treeBlob03.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Props/treeBlob02.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Scenes/Props/treeRoundTop05.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Scenes/Props/treeBlob01.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Scenes/Props/treeRoundTop01.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Scenes/Props/treeBlob04.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/Props/tree07.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scenes/Props/treeRoundTop06.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/Props/treeRoundTop04.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Scenes/Props/treeRoundTop02.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Scenes/Props/tree06.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Scenes/Props/tree02.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Scenes/Props/treeRoundTop07Snow.tscn" type="PackedScene" id=15]
+[ext_resource path="res://Scenes/Props/treeTall05.tscn" type="PackedScene" id=16]
+[ext_resource path="res://Scenes/Props/treeRoundTop10Snow.tscn" type="PackedScene" id=17]
+[ext_resource path="res://Scenes/Props/treeRoundTop09Snow.tscn" type="PackedScene" id=18]
+[ext_resource path="res://Scenes/Props/treeTall03.tscn" type="PackedScene" id=19]
+[ext_resource path="res://Scenes/Props/treeTall06.tscn" type="PackedScene" id=20]
+[ext_resource path="res://Scenes/Props/treeThin01.tscn" type="PackedScene" id=22]
+[ext_resource path="res://Scenes/Props/treeTall02.tscn" type="PackedScene" id=23]
+[ext_resource path="res://Scenes/Props/treeThin02.tscn" type="PackedScene" id=24]
+[ext_resource path="res://Scenes/Props/treeRoundTop08Snow.tscn" type="PackedScene" id=25]
+[ext_resource path="res://Scenes/Props/treeTall01.tscn" type="PackedScene" id=26]
+
+[node name="TreeTiles" type="Spatial"]
+
+[node name="tree01" parent="." instance=ExtResource( 1 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 0 )
+
+[node name="tree02" parent="." instance=ExtResource( 14 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -10 )
+
+[node name="tree06" parent="." instance=ExtResource( 13 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 0 )
+
+[node name="tree07" parent="." instance=ExtResource( 9 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 5 )
+
+[node name="treeBlob01" parent="." instance=ExtResource( 6 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -5 )
+
+[node name="treeBlob02" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 0 )
+
+[node name="treeBlob03" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 5 )
+
+[node name="treeBlob04" parent="." instance=ExtResource( 8 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -5 )
+
+[node name="treeRoundTop01" parent="." instance=ExtResource( 7 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 5 )
+
+[node name="treeRoundTop02" parent="." instance=ExtResource( 12 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -5 )
+
+[node name="treeRoundTop03" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, 10 )
+
+[node name="treeRoundTop04" parent="." instance=ExtResource( 11 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 0 )
+
+[node name="treeRoundTop05" parent="." instance=ExtResource( 5 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -10 )
+
+[node name="treeRoundTop06" parent="." instance=ExtResource( 10 )]
+
+[node name="treeRoundTop07Snow" parent="." instance=ExtResource( 15 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, -15 )
+
+[node name="treeRoundTop08Snow" parent="." instance=ExtResource( 25 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, 0 )
+
+[node name="treeRoundTop09Snow" parent="." instance=ExtResource( 18 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -15, 0, 15 )
+
+[node name="treeRoundTop10Snow" parent="." instance=ExtResource( 17 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 15 )
+
+[node name="treeTall01" parent="." instance=ExtResource( 26 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 15 )
+
+[node name="treeTall02" parent="." instance=ExtResource( 23 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, 0 )
+
+[node name="treeTall03" parent="." instance=ExtResource( 19 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0, 15 )
+
+[node name="treeTall05" parent="." instance=ExtResource( 16 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 10 )
+
+[node name="treeTall06" parent="." instance=ExtResource( 20 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, -10 )
+
+[node name="treeThin01" parent="." instance=ExtResource( 22 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 0, 10 )
+
+[node name="treeThin02" parent="." instance=ExtResource( 24 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 0, -15 )

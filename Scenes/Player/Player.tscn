@@ -1,0 +1,180 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://Scripts/Player/Player.gd" type="Script" id=1]
+[ext_resource path="res://Scripts/Player/PlayerStatemachine.gd" type="Script" id=2]
+[ext_resource path="res://Scripts/Tools/InteractableRaycast.gd" type="Script" id=3]
+
+[sub_resource type="CapsuleShape" id=1]
+radius = 0.2
+height = 0.8
+
+[sub_resource type="Animation" id=2]
+resource_name = "dead"
+length = 5.0
+tracks/0/type = "value"
+tracks/0/path = NodePath("Dead/AudioStreamPlayer4:playing")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Dead/AudioStreamPlayer2:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Dead/AudioStreamPlayer3:playing")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.5 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("Dead/AudioStreamPlayer:playing")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 1.1 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("Dead/AudioStreamPlayer6:playing")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 1.3 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("Dead/AudioStreamPlayer7:playing")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 4 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "free"
+
+[sub_resource type="Animation" id=4]
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("Head/Camera:translation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0.2, 0.430752, 0.8, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector3( 0.1, 0.5, 0 ), Vector3( 0, 0.566411, 0 ), Vector3( -0.1, 0.5, 0 ), Vector3( 0, 0.566411, 0 ) ]
+}
+
+[node name="Player" type="KinematicBody" groups=[
+"Player",
+]]
+collision_layer = 4
+collision_mask = 3
+script = ExtResource( 1 )
+
+[node name="CollisionShape" type="CollisionShape" parent="."]
+transform = Transform( 1, 0, 0, 0, -1.62921e-07, -1, 0, 1, -1.62921e-07, 0, 0, 0 )
+shape = SubResource( 1 )
+
+[node name="Head" type="Spatial" parent="."]
+
+[node name="Camera" type="Camera" parent="Head"]
+transform = Transform( 0.998782, 0.0348782, -0.0348995, -0.0348995, 0.999391, 0, 0.0348782, 0.00121797, 0.999391, 0, 0.566411, 0 )
+
+[node name="InteractableRaycast" type="RayCast" parent="Head/Camera"]
+transform = Transform( 1, 1.17871e-09, 0, 1.17143e-09, 1, -1.16415e-10, 0, 0, 1, 0, 0, 0 )
+enabled = true
+cast_to = Vector3( 0, 0, -2 )
+collision_mask = 16
+script = ExtResource( 3 )
+
+[node name="SpotLight" type="SpotLight" parent="Head/Camera"]
+visible = false
+spot_range = 6.15248
+spot_angle = 22.385
+
+[node name="SpotLight2" type="SpotLight" parent="Head/Camera"]
+visible = false
+light_color = Color( 0.964706, 0.964706, 0.937255, 1 )
+light_energy = 0.4
+spot_range = 7.11103
+spot_angle = 34.715
+
+[node name="PlayerStatemachine" type="Node" parent="."]
+script = ExtResource( 2 )
+
+[node name="WalkingSounds" type="Spatial" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="WalkingSounds"]
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="WalkingSounds"]
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="WalkingSounds"]
+
+[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="WalkingSounds"]
+
+[node name="AudioStreamPlayer5" type="AudioStreamPlayer" parent="WalkingSounds"]
+
+[node name="AudioStreamPlayer7" type="AudioStreamPlayer" parent="WalkingSounds"]
+
+[node name="AudioStreamPlayer8" type="AudioStreamPlayer" parent="WalkingSounds"]
+
+[node name="AudioStreamPlayer9" type="AudioStreamPlayer" parent="WalkingSounds"]
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/dead = SubResource( 2 )
+anims/free = SubResource( 3 )
+anims/walkShake = SubResource( 4 )
+
+[node name="Dead" type="Spatial" parent="."]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Dead"]
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="Dead"]
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="Dead"]
+
+[node name="AudioStreamPlayer4" type="AudioStreamPlayer" parent="Dead"]
+
+[node name="AudioStreamPlayer5" type="AudioStreamPlayer" parent="Dead"]
+
+[node name="AudioStreamPlayer6" type="AudioStreamPlayer" parent="Dead"]
+
+[node name="AudioStreamPlayer7" type="AudioStreamPlayer" parent="Dead"]
