@@ -3,6 +3,7 @@ extends Control
 onready var parent = $"../"
 export(PackedScene) var player
 onready  var playerposition = $"../../PlayerPosition"
+onready var camera = get_node("/root/Main/Spatial")
 #props
 
 onready var map_sizex = $VBoxContainer/TabContainer/World/VBoxContainer/HBoxContainer/mapsizex
@@ -12,7 +13,9 @@ onready var mwater_p = $VBoxContainer/TabContainer/World/VBoxContainer/HBoxConta
 onready var mland_p =$VBoxContainer/TabContainer/World/VBoxContainer/HBoxContainer3/landpoint
 onready var mtree_p = $"VBoxContainer/TabContainer/Tree's/VBoxContainer2/HBoxContainer/treepoint"
 onready var mgrass_p = $VBoxContainer/TabContainer/Grass/VBoxContainer/HBoxContainer3/grasspoint
+onready var mibush_p = $VBoxContainer/TabContainer/Bushes/VBoxContainer4/HBoxContainer5/bushpoint2
 onready var mbush_p = $VBoxContainer/TabContainer/Bushes/VBoxContainer4/HBoxContainer5/bushpoint
+onready var mirock_p = $VBoxContainer/TabContainer/Rocks/VBoxContainer6/HBoxContainer6/rockpoint2
 onready var mrock_p = $VBoxContainer/TabContainer/Rocks/VBoxContainer6/HBoxContainer6/rockpoint
 #var environment_p = Vector3(-0.1, 0.3,.04)
 #from to till
@@ -39,7 +42,9 @@ func _ready():
 	mland_p.text = String(parent.land_p.y)
 	mtree_p.text = String(parent.tree_p.y)
 	mgrass_p.text = String(parent.grass_p.y)
+	mibush_p.text = String(parent.bush_p.x)
 	mbush_p.text = String(parent.bush_p.y)
+	mirock_p.text = String(parent.rock_p.x)
 	mrock_p.text = String(parent.rock_p.y)
 	tree_from.text = String(parent.tree_from)
 	tree_till.text = String(parent.tree_till)
@@ -72,7 +77,7 @@ func _on_ButtonWorld_pressed():
 
 
 func _on_ButtonTrees_pressed():
-	parent.tree_p.x = float(mwater_p.text)
+	parent.tree_p.x = float(mland_p.text)
 	parent.tree_p.y = float(mtree_p.text)
 	parent.tree_from = int(tree_from.text)
 	parent.tree_till = int(tree_till.text)
@@ -91,7 +96,7 @@ func _on_ButtonGrass_pressed():
 
 
 func _on_ButtonBushes_pressed():
-	parent.bush_p.x = float(mgrass_p.text)
+	parent.bush_p.x = float(mibush_p.text)
 	parent.bush_p.y = float(mbush_p.text)
 	parent.bush_from = int(bush_from.text)
 	parent.bush_till = int(rock_till.text)
@@ -101,7 +106,7 @@ func _on_ButtonBushes_pressed():
 	
 
 func _on_ButtonRocks_pressed():
-	parent.rock_p.x = float(mbush_p.text)
+	parent.rock_p.x = float(mirock_p.text)
 	parent.rock_p.y = float(mrock_p.text)
 	parent.rock_from = int(rock_from.text)
 	parent.rock_till = int(rock_till.text)
@@ -130,7 +135,7 @@ func _on_GenerateWorld_pressed():
 	parent.water_p = float(mwater_p.text)
 	parent.land_p.x = parent.water_p
 	parent.land_p.y = float(mland_p.text)
-	parent.tree_p.x = float(mwater_p.text)
+	parent.tree_p.x = float(mland_p.text)
 	parent.tree_p.y = float(mtree_p.text)
 	parent.tree_from = int(tree_from.text)
 	parent.tree_till = int(tree_till.text)
@@ -139,11 +144,11 @@ func _on_GenerateWorld_pressed():
 #	print(parent.grass_p.x,parent.grass_p.y)
 	parent.grass_from = int(grass_from.text)
 	parent.grass_till = int(grass_till.text)
-	parent.bush_p.x = float(parent.grass_p.y)
+	parent.bush_p.x = float(mibush_p.text)
 	parent.bush_p.y = float(mbush_p.text)
 	parent.bush_from = int(bush_from.text)
 	parent.bush_till = int(rock_till.text)
-	parent.rock_p.x = float(parent.bush_p.y)
+	parent.rock_p.x = float(mirock_p.text)
 	parent.rock_p.y = float(mrock_p.text)
 	parent.rock_from = int(rock_from.text)
 	parent.rock_till = int(rock_till.text)
@@ -167,3 +172,10 @@ func _on_ButtonAnimals_pressed():
 
 
 
+
+
+func _on_CheckBox_pressed():
+	if camera.rotate == true:
+		camera.rotate = false
+	else:
+		camera.rotate = true

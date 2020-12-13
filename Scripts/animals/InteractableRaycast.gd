@@ -19,8 +19,8 @@ func _process(delta):
 	if is_colliding() and collider is Interactable:
 		if current_collider !=collider:
 			current_collider = collider
-			collider.interact()
-			collider.end_by(main)
+#			collider.interact()
+#			collider.end_by(main)
 #			set_interaction_test(collider.get_interaction_text())
 #			set_resource_name(collider.get_resource_name())
 		if collider.is_in_group("wall"):

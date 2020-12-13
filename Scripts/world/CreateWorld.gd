@@ -10,7 +10,7 @@ export var map_size = Vector3(20,1,20)
 #breaking points
 export var water_p = -0.3
 export var land_p = Vector2(-0.3,-0.23)
-export var tree_p = Vector2(-0.25, 0.50)
+export var tree_p = Vector2(-0.23, 0.50)
 export var grass_p = Vector2(0.30, 0.55)
 export var bush_p = Vector2(0.40, 0.47)
 export var rock_p = Vector2(0.48, 0.5)
@@ -33,11 +33,11 @@ export(String, DIR) var grass_dir
 export(String, DIR) var rocks_dir
 
 #from to till
-export(int) var tree_from = 0
-export(int) var tree_till = 1
-export(int) var grass_from = 4
+export(int) var tree_from = 2
+export(int) var tree_till = 2
+export(int) var grass_from = 2
 export(int) var grass_till = 1
-export(int) var bush_from = 0
+export(int) var bush_from = 1
 export(int) var bush_till = 1
 export(int) var rock_from = 0
 export(int) var rock_till = 1
@@ -47,7 +47,7 @@ export(int) var anim_chances = 5
 export(int) var tree_chances = 5
 export(int) var grass_chances = 40
 export(int) var bush_chances = 20
-export(int) var rock_chances = 100
+export(int) var rock_chances = 50
 
 var anims = []
 var trees = []

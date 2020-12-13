@@ -9,11 +9,11 @@ func _ready():
 	
 func _state_logic(delta):
 	
-	if state == states.search:
-		parent.search(delta)
-	else:
-		parent.move_to_tar(delta)
-		
+#	if state == states.search:
+#		parent.search(delta)
+#	else:
+#		parent.move_to_tar(delta)
+	parent.search(delta)
 		
 
 
