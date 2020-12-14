@@ -86,6 +86,7 @@ func noise_and_stuff():
 
 func make_land_map():
 	groundtiles.clear()
+#	bordertiles.clear()
 	free_all_the_water()
 	for x in map_size.x:
 		for y in map_size.y:
@@ -115,6 +116,7 @@ func make_land_map():
 
 
 func make_boundies():
+	bordertiles.clear()
 	for x in map_size.x:
 		for y in map_size.y:
 			for z in map_size.z:
